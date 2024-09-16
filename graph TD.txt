@@ -1,0 +1,24 @@
+graph TD
+    A[Collecte de données] --> B[Analyse et décision]
+    B --> C[Génération de contenu]
+    C --> D[Publication sur les réseaux sociaux]
+    D --> E[Engagement communautaire]
+    E --> F[Analyse des performances]
+    F --> B
+    
+    G[API Blockchain] --> A
+    H[API Réseaux sociaux] --> A
+    H <--> D
+    H <--> E
+    
+    I[Base de données] <--> A
+    I <--> B
+    I <--> C
+    I <--> F
+    
+    J[Modèles d'IA] <--> B
+    J <--> C
+    J <--> E
+    
+    K[Interface administrateur] --> L[Paramètres et supervision]
+    L --> B

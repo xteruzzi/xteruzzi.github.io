@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main> 
+        <h1>Welcome to My Website</h1>
+        <table width=" 100%">
+            <caption>Menu</caption>
+            <tr>
+              <td width="80%">
+                
+                <iframe id="wpiframe" src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/veille-technologique-blockchain-2/" title="Veille" height="900px" width="100%">
+                </iframe>
+              </td>
+              <td width=" 20%">
+                <div class="vertical-menu">
+                    <button id="btnArticle1" type="button" class="active" onclick="changeArticle(this.id)">Article 1</button>
+                    <button id="btnArticle2" type="button" onclick="changeArticle(this.id)">Article 2</button>
+                    <button id="btnArticle3" type="button" onclick="changeArticle(this.id)">Article 3</button>
+                    <button id="btnArticle4" type="button" onclick="changeArticle(this.id)">Article 4</button>
+                    <button id="btnArticle5" type="button" onclick="changeArticle(this.id)">Article 5</button>
+                  </div>                
+              </td>
+            </tr>
+          </table>  
+    </main>
+    <style>
+        .vertical-menu {
+            width: 200px; /* Set a width if you like */
+            height: 50px;
+        }
+
+        .vertical-menu button {
+          background-color: #444; /* Grey background color */
+          color: white; /* Black text color */
+          display: block; /* Make the links appear below each other */
+          padding: px; /* Add some padding */
+          text-decoration: none; /* Remove underline from links */
+          width: 200px;
+          height: 60px;
+          color: white;
+        }
+
+        .vertical-menu button:hover {
+          background-color: #ccc; /* Dark grey background on mouse-over */
+        }
+
+        /* .vertical-menu button.active {
+          background-color: #04AA6D;
+        }
+
+        .vertical-menu button.inactive {
+          background-color: #fdfffe;
+          
+        }*/
+  </style>
+
+  <script  type='text/javascript'>
+
+      function changeArticle(clicked_id){
+
+         iframewordpress = document.getElementById("wpiframe");
+         resetButtons()
+         if (clicked_id == "btnArticle1" ) {
+               iframewordpress.src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/lart-des-liens/"
+               
+        } else if (clicked_id  == "btnArticle2" ) {
+               iframewordpress.src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/au-dela-de-lobstacle/"
+               
+        } else if (clicked_id  == "btnArticle3" ) {
+               iframewordpress.src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/croissance-liberee/"
+               
+        } else if (clicked_id  == "btnArticle4" ) {
+               iframewordpress.src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/la-magie-de-la-collaboration/"
+              
+        } else if (clicked_id  == "btnArticle5" ) {
+               iframewordpress.src="https://veilletechnologiqueblockchain2.wordpress.com/2024/09/11/le-travail-dequipe-triomphe/"
+        }
+        document.getElementById(clicked_id).style.backgroundColor="#0f0"
+    }
+
+    function resetButtons(){
+        btn1 = document.getElementById("btnArticle1");
+        btn1.style.backgroundColor="#222"
+
+        btn2 = document.getElementById("btnArticle2");
+        btn2.style.backgroundColor="#222"
+
+
+        btn3 = document.getElementById("btnArticle3");
+        btn3.style.backgroundColor="#222"
+        
+
+        btn4 = document.getElementById("btnArticle4");
+        btn4.style.backgroundColor="#222"
+        
+
+        btn5 = document.getElementById("btnArticle5");
+        btn5.style.backgroundColor="#222"
+        
+    }
+      
+    resetButtons()
+    document.getElementById("btnArticle1").style.backgroundColor="#0f0"
+
+  </script>
+  </body>
+</html>
