@@ -6,63 +6,112 @@
   <title><Xavier Teruzzi Portfolio></title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+  }
+  header {
+      background: #1a237e;
+      color: #ffffff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e8491d 4px solid;
+  }
+  header a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+  }
+  header ul {
+      padding: 0;
+      list-style: none;
+  }
+  header li {
+      display: inline;
+      padding: 0 20px 0 20px;
+  }
+  h1, h2, h3 {
+      color: #fcfcfc;
+  }
+  .main {
+      padding: 20px;
+      background: #ffffff;
+  }
+  .section-title {
+      border-bottom: 2px solid #e8491d;
+      padding-bottom: 10px;
+  }
+  .section-content {
+      margin-top: 20px;
+  }
+  ul {
+      margin-top: 10px;
+  }
+  li {
+      margin-bottom: 10px;
+  }
+</style>
+
 <header class="bg-blue-900 text-white py-4">
   <div class="container mx-auto px-4 flex justify-between items-center">
     <h1 class="text-2xl font-bold">Xavier Teruzzi Portfolio </h1>
     <nav>
       <ul class="flex space-x-4">
-        <li><a href="index.html" class="hover:text-white-400">Accueil</a></li>
-        <li><a href="veilleblockchain.html" class="hover:text-white-400">Veille Blockchain</a></li>
-        <li><a href="veilleCybersecuriteReseauxsociaux.html" class="hover:text-white-400" target="_blank">Veille Cybersécurité sur les réseaux sociaux</a></li>
-        <li><a href="altern1.html" class="hover:text-white-400">Alternance 1ère année</a></li>
-        <li><a href="altern2.html" class="hover:text-white-400">Alternance 2ème année</a></li>
-        <li><a href="guidedebonneconduite.html" class="hover:text-white-400">Guide de bonne conduite</a></li>
+        <li><a onclick='changeIframe("pages/accueil.html")' class="hover:text-white-400">Accueil</a></li>
+        <li><a  onclick='changeIframe("pages/veilleCyb.html")' class="hover:text-white-400">Veille Cybersécurité</a></li>
+        <li><a  onclick='changeIframe("pages/veillebc.html")' class="hover:text-white-400">Veille Blockchain</a></li>
+        <li><a  onclick='changeIframe("pages/alt1.html")' class="hover:text-white-400">Alternance 1ère année</a></li>
+        <li><a  onclick='changeIframe("pages/alt2.html")' class="hover:text-white-400">Alternance 2ème année</a></li>
+        <li><a  onclick='changeIframe("pages/guide.html")' class="hover:text-white-400">Guide de bonne conduite</a></li>
+        <li><a  onclick='changeIframe("pages/mentions.html")' class="hover:text-white-400">Mentions Légales</a></li>
       </ul>
     </nav>
   </div>
 </header>
+
+
+
 <body class="bg-white-200 font-sans">
   <main>
-    <section id="about" class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-4">A propos</h2>
-        <p class="text-black-600 leading-relaxed">
-          Je suis étudiant de première année en BTS SIO au lycée Paul Sabatier à Carcassonne, et alternant dans l'entreprise Blockchain Conseil, qui est spécialisée dans les nouvelles technologies et l'intelligence artificielle.
-        </p>
-        <center>
-        <embed src="CV.pdf" width="800" height="500" type="application/pdf"/>
-        </center>
-      </div>
-    </section>
+
+    <iframe id="iframeId" src="accueil.html" height="400" width="100%" name="demo">
+      <p>Votre navigateur ne supporte aucune iframe !</p>
+    </iframe>
 
     <footer class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-4 text-center">
-
-    <section id="contact" class="py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-4">Me contacter</h2>
-        <form class="bg-white rounded-lg shadow-md p-6">
-          
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2">Email: xavteruzzi@gmail.com</mailto:></label>
-          </div>
-          <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2">LinkedIn: xavier-teruzzi-b398bb326</label>
-          </div>
-          <div class="mb-4"></div>
-            <label class="block text-gray-700 font-bold mb-2">X: @xteruzzi60098</label>
-          </div>
-          <div class="flex justify-end">
-           
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  
-      <p>&copy; 2024 Xavier Teruzzi Portfolio. Tous droits réservés.</p>
-    </div>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:xavteruzzi@gmail.com">xavteruzzi@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/xavier-teruzzi-b398bb326" target="_blank">xavier-teruzzi-b398bb326</a></p>
+      <p>X: <a href="https://x.com/xteruzzi60098" target="_blank">@xteruzzi60098</a></p>
+      <style>
+        a {
+            color: white; /* Changer la couleur des liens en blanc */
+            text-decoration: none; /* Supprimer le soulignement des liens */
+        }
+        a:hover {
+            text-decoration: underline; /* Souligner les liens au survol */
+        }
+    </style>
+    <p>&copy; 2024 Xavier Teruzzi Portfolio. Tous droits réservés.</p>
   </footer>
 </body>
+
+
+  <script type="text/javascript">
+    function changeIframe(iframepath) {
+      document.getElementById('iframeId').src = iframepath;
+    }
+  </script>
+
 </html>
