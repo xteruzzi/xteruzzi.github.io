@@ -3,115 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><Xavier Teruzzi Portfolio></title>
+  <title>Xavier Teruzzi Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2rGx6b2GpqxsWcG/MRddZ/tGQYyZj8+/vi1+UozQ2EcRpO6v1F5BhZ5Llo9L1MZ5ZP+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    header {
+    background: #0d0175;
+    color: #ffffff;
+    border-bottom: #ffffff 4px solid;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-right: 2rem;
+    color: #4d9eff; /* Bleu clair qui s'harmonise avec le fond #0d0175 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+    .main {
+        padding: 20px;
+        background: #ffffff;
+    }
+    .section-title {
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+    }
+    .section-content {
+        margin-top: 20px;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    footer {
+        background-color: rgb(0, 0, 0); /* Couleur de fond noire pour le footer */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    footer a {
+        color: white; /* Changer la couleur des liens en blanc */
+        text-decoration: none; /* Supprimer le soulignement des liens */
+    }
+    footer a:hover {
+        text-decoration: underline; /* Souligner les liens au survol */
+    }
+    .social-icons a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+  </style>
 </head>
-
-<style>
-  body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-  }
-  .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-  }
-  header {
-      background: #1a237e;
-      color: #ffffff;
-      padding-top: 30px;
-      min-height: 70px;
-      border-bottom: #e8491d 4px solid;
-  }
-  header a {
-      color: #ffffff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 16px;
-  }
-  header ul {
-      padding: 0;
-      list-style: none;
-  }
-  header li {
-      display: inline;
-      padding: 0 20px 0 20px;
-  }
-  h1, h2, h3 {
-      color: #fcfcfc;
-  }
-  .main {
-      padding: 20px;
-      background: #ffffff;
-  }
-  .section-title {
-      border-bottom: 2px solid #e8491d;
-      padding-bottom: 10px;
-  }
-  .section-content {
-      margin-top: 20px;
-  }
-  ul {
-      margin-top: 10px;
-  }
-  li {
-      margin-bottom: 10px;
-  }
-</style>
-
-<header class="bg-blue-900 text-white py-4">
-  <div class="container mx-auto px-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Xavier Teruzzi Portfolio </h1>
-    <nav>
-      <ul class="flex space-x-4">
-        <li><a onclick='changeIframe("pages/accueil.html")' class="hover:text-white-400">Accueil</a></li>
-        <li><a  onclick='changeIframe("pages/veilleCyb.html")' class="hover:text-white-400">Veille Cybersécurité</a></li>
-        <li><a  onclick='changeIframe("pages/veillebc.html")' class="hover:text-white-400">Veille Blockchain</a></li>
-        <li><a  onclick='changeIframe("pages/alt1.html")' class="hover:text-white-400">Alternance 1ère année</a></li>
-        <li><a  onclick='changeIframe("pages/alt2.html")' class="hover:text-white-400">Alternance 2ème année</a></li>
-        <li><a  onclick='changeIframe("pages/guide.html")' class="hover:text-white-400">Guide de bonne conduite</a></li>
-        <li><a  onclick='changeIframe("pages/mentions.html")' class="hover:text-white-400">Mentions Légales</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-
 <body class="bg-white-200 font-sans">
+  <header class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto px-4 d-flex flex-column align-items-center text-center">
+      <nav class="mt-4" style="display: flex; justify-content: flex-end; align-items: center;">
+        <h1 class="text-2xl font-bold" style="margin-right: 20px;">Xavier Teruzzi</h1>
+        <h1 class="text-2xl font-bold" style="margin-right: 20px;">Portfolio</h1>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a onclick='changeIframe("pages/accueil.html")' class="nav-link text-white">Accueil</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/veilleCyb.html")' class="nav-link text-white">Veille Cybersécurité</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/veillebc.html")' class="nav-link text-white">Veille Blockchain</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/alt1.html")' class="nav-link text-white">Alternance 1ère année</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/alt2.html")' class="nav-link text-white">Alternance 2ème année</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/guide.html")' class="nav-link text-white">Guide de bonne conduite</a></li>
+          <li class="nav-item"><a onclick='changeIframe("pages/mentions.html")' class="nav-link text-white">Mentions Légales</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
-
-    <iframe id="iframeId" src="accueil.html" height="400" width="100%" name="demo">
+    <iframe id="iframeId" src="accueil.html" style="width: 100%; height: 100vh; border: none;">
       <p>Votre navigateur ne supporte aucune iframe !</p>
     </iframe>
-
-    <footer class="bg-gray-800 text-white py-4">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:xavteruzzi@gmail.com">xavteruzzi@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/xavier-teruzzi-b398bb326" target="_blank">xavier-teruzzi-b398bb326</a></p>
-      <p>X: <a href="https://x.com/xteruzzi60098" target="_blank">@xteruzzi60098</a></p>
-      <style>
-        a {
-            color: white; /* Changer la couleur des liens en blanc */
-            text-decoration: none; /* Supprimer le soulignement des liens */
-        }
-        a:hover {
-            text-decoration: underline; /* Souligner les liens au survol */
-        }
-    </style>
-    <p>&copy; 2024 Xavier Teruzzi Portfolio. Tous droits réservés.</p>
-  </footer>
-</body>
-
+</main>
 
   <script type="text/javascript">
     function changeIframe(iframepath) {
       document.getElementById('iframeId').src = iframepath;
     }
   </script>
-
+</body>
 </html>

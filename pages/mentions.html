@@ -1,31 +1,103 @@
-<h1>MENTIONS LEGALES</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions Légales</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
-<h2>Éditeur du site</h2>
-    <p>
-        Nom : Xavier Teruzzi<br>
-        Adresse : Domaine des Castelles, 11170 Caux-et-Sauzens<br>
-        Téléphone : 07 44 86 69 64<br>
-        Email : xavteruzzi@gmail.com<br>
-    </p>
 
-    <h2>Hébergeur du site</h2>
-    <p>
-        Nom de l'hébergeur : Github<br>
-        Adresse : https://enterprise.github.com/contact<br>
-        Site web : https://github.com<br>
-    </p>
+    
+  <main class="container mx-auto px-4 py-8">
+    <section id="editeur" class="mb-8">
+        <h1 class="text-2xl font-bold">MENTIONS LEGALES</h1>
+    </section>
+    <section id="editeur" class="mb-8">
+      <h2 class="text-xl font-bold mb-4 border-b-2 border-red-600">Éditeur du site</h2>
+      <p class="text-gray-700">
+        <strong>Nom :</strong> Xavier Teruzzi<br>
+        <strong>Adresse :</strong> Domaine des Castelles, 11170 Caux-et-Sauzens<br>
+        <strong>Téléphone :</strong> 07 44 86 69 64<br>
+        <strong>Email :</strong> <a href="mailto:xavteruzzi@gmail.com" class="text-blue-500">xavteruzzi@gmail.com</a>
+      </p>
+    </section>
 
-    <h2>Propriété intellectuelle</h2>
-    <p>
-        Tous les éléments du site xteruzzi.github.io , y compris les textes, images, graphismes, logos, icônes, sons et logiciels, sont la propriété exclusive de Xavier Teruzzi. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable du propriétaire.
-    </p>
+    <section id="hebergeur" class="mb-8">
+      <h2 class="text-xl font-bold mb-4 border-b-2 border-red-600">Hébergeur</h2>
+      <p class="text-gray-700">
+        <strong>Nom de l'hébergeur :</strong> Github<br>
+        <strong>Adresse :</strong> <a href="https://enterprise.github.com/contact" target="_blank" class="text-blue-500">https://enterprise.github.com/contact</a><br>
+        <strong>Site web :</strong> <a href="https://github.com" target="_blank" class="text-blue-500">https://github.com</a>
+      </p>
+    </section>
 
-    <h2>Liens hypertextes</h2>
-    <p>
+    <section id="propriete-intellectuelle" class="mb-8">
+      <h2 class="text-xl font-bold mb-4 border-b-2 border-red-600">Propriété intellectuelle</h2>
+      <p class="text-gray-700">
+        Tous les éléments du site xteruzzi.github.io, y compris les textes, images, graphismes, logos, icônes, sons et logiciels, sont la propriété exclusive de Xavier Teruzzi. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable du propriétaire.
+      </p>
+    </section>
+
+    <section id="liens-hypertextes" class="mb-8">
+      <h2 class="text-xl font-bold mb-4 border-b-2 border-red-600">Liens hypertextes</h2>
+      <p class="text-gray-700">
         Le site xteruzzi.github.io peut contenir des liens hypertextes vers d'autres sites internet. Le propriétaire du site ne peut être tenu responsable du contenu de ces sites.
-    </p>
+      </p>
+    </section>
 
-    <h2>Données personnelles</h2>
-    <p>
-        Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous pouvez nous contacter à l'adresse suivante : xavteruzzi@gmail.com
-    </p>
+    <section id="donnees-personnelles" class="mb-8">
+      <h2 class="text-xl font-bold mb-4 border-b-2 border-red-600">Données personnelles</h2>
+      <p class="text-gray-700">
+        Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant. Pour exercer ce droit, vous pouvez me contacter à l'adresse suivante : <a href="mailto:xavteruzzi@gmail.com" class="text-blue-500">xavteruzzi@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+</body>
+<!-- Suppression de la bordure en haut du footer -->
+<footer class="bg-gray-800 text-white py-4" style="text-align: center;">
+  <!-- Conteneur principal avec flexbox pour aligner les éléments sur une ligne -->
+  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <!-- Texte copyright et mentions légales sur la même ligne -->
+
+      <!-- Icônes de réseaux sociaux alignées à droite avec une séparation -->
+      <div style="display: flex; align-items: center; margin-right: 50px;">
+        <p style="margin-right: 10px;">&copy; 2024 Xavier Teruzzi Portfolio. Tous droits réservés.</p>
+        <!-- Mentions Légales avec le même style que les liens du reste de la page -->
+    </div>
+      <div class="social-icons" style="display: flex; align-items: center;">
+          <a href="mailto:xavteruzzi@gmail.com" target="_blank" style="margin: 0 10px;">
+              <img src="../images/email.jpg" alt="Email" style="width: 40px; height: 40px;">
+          </a>
+          <a href="https://www.linkedin.com/in/xavier-teruzzi-b398bb326" target="_blank" style="margin: 0 10px;">
+              <img src="../images/linkedin.jpg" alt="LinkedIn" style="width: 40px; height: 40px;">
+          </a>
+          <a href="https://x.com/xteruzzi60098" target="_blank" style="margin: 0 10px;">
+              <img src="../images/twitter.jpg" alt="X" style="width: 40px; height: 40px;">
+          </a>
+      </div>
+  </div>
+</footer>
+<style>
+  html, body {
+      height: 100%;
+      margin: 0;
+  }
+
+  body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+
+  main {
+      flex: 1;
+  }
+
+  footer {
+      margin-top: auto;
+  }
+</style>
+</html>

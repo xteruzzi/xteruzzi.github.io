@@ -1,5 +1,57 @@
+<html>
+<head>
+    <title>Alternance 2ème année</title>
+</head>
+<body>
 <p></p>  
 
 <script>
     alert("Ce contenu n'est pas encore disponible")
 </script>
+</body>
+<!-- Suppression de la bordure en haut du footer -->
+<footer class="bg-gray-800 text-white py-4" style="text-align: center;">
+    <!-- Conteneur principal avec flexbox pour aligner les éléments sur une ligne -->
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <!-- Texte copyright et mentions légales sur la même ligne -->
+
+        <!-- Icônes de réseaux sociaux alignées à droite avec une séparation -->
+        <div style="display: flex; align-items: center; margin-right: 50px;">
+          <p style="margin-right: 10px;">&copy; 2024 Xavier Teruzzi Portfolio. Tous droits réservés.</p>
+          <!-- Mentions Légales avec le même style que les liens du reste de la page -->
+      </div>
+        <div class="social-icons" style="display: flex; align-items: center;">
+            <a href="mailto:xavteruzzi@gmail.com" target="_blank" style="margin: 0 10px;">
+                <img src="../images/email.jpg" alt="Email" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://www.linkedin.com/in/xavier-teruzzi-b398bb326" target="_blank" style="margin: 0 10px;">
+                <img src="../images/linkedin.jpg" alt="LinkedIn" style="width: 40px; height: 40px;">
+            </a>
+            <a href="https://x.com/xteruzzi60098" target="_blank" style="margin: 0 10px;">
+                <img src="../images/twitter.jpg" alt="X" style="width: 40px; height: 40px;">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+</style>
+</html>

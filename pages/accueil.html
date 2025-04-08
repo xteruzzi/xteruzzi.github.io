@@ -1,16 +1,79 @@
-<section id="about" class="py-16">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-4">A propos</h2>
-    <p class="text-black-600 leading-relaxed">
-      Je suis étudiant de première année en BTS SIO au lycée Paul Sabatier à Carcassonne, et alternant dans l'entreprise Blockchain Conseil, qui est spécialisée dans les nouvelles technologies et l'intelligence artificielle.
-    </p>
-    <center>
-    <object class="pdf" 
-    data="../images/CV.pdf" width="800" height="500">
-</object>
-  </center>
-  </div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gradient-text {
+      background: linear-gradient(45deg, #4d9eff, #0d0175);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-sans leading-normal tracking-normal">
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text fade-in">À propos</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8 hover-scale fade-in">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                        <img src="../images/profile.jpg" alt="Xavier Teruzzi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <p class="text-lg text-gray-700 mb-6">
+                            Etudiant de première année en BTS SIO (Services Informatiques aux Organisations) au lycée Paul Sabatier à Carcassonne, je suis alternant dans l'entreprise Blockchain Conseil, qui est spécialisée dans les nouvelles technologies et l'intelligence artificielle.
+                        </p>
+                        <a href="../images/CV.pdf" download class="inline-block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fas fa-download mr-2"></i>Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  
+    <footer class="bg-gray-800 text-white py-4">
+        <!-- Votre footer existant -->
+    </footer>
 
-</section>
+    <script>
+        // Animation au défilement
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+        // Effet de parallaxe sur le fond
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            document.body.style.backgroundPosition = `${moveX}px ${moveY}px`;
+        });
+    </script>
+</body>
+</html>
